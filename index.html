@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Brush+Script&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href='stylesheet.css'>
+
+</head>
+
+<body>
+  <canvas>
+  </canvas>
+
+  <div class="book">
+
+    <div class="container1">
+      <h4>Hy, Anne! <br><br> I wish you a Happy Birthday filled <span class="red">love</span> and <span
+          class="yellow">joy</span>. <br><br> I have a special gift for you... a <span class="blue">book</span>... a
+        <span class="red">roadmap</span>... a <span class="green">wishing list</span> <span class="red">
+          <3 </span>
+      </h4>
+    </div>
+
+
+    <div id="pages" class="pages">
+      <div class="page page1">
+        <div class="imgBox">
+
+        </div>
+      </div>
+      <div class="page"></div>
+      <div class="page">
+        <div class="border_top"></div>
+        <h4 class="title1"> <span><img src="images/bird.png" id="bird_1"></span> How are you doing <span>Babe</span>
+          ?<span> </h4>
+        <h4 class="title2">Today is <span>your</span> birthday which means today is about <span>YOU</span> !</h4>
+        <div class='bird-container'><span><img src="images/bird_2.png" id="bird_2"></span></div>
+        <div class="heart-container">
+          <p>To the girl I fall in love with...</p>
+          <div>
+            <img src="images/heart_cartoony.png" alt="">
+          </div>
+        </div>
+        <p>Today is the day I've been waiting for to come and its finally hereee! Your special day, a day to celebrate
+          the incredible person you are.</p>
+        <p><span>Anne</span>, there are not many things I can wish for you. You already have them. I hope you continue
+          to be the kind, cheerful, smiling and lovely person I first met. Your smile is absolutely precious; it has the
+          power to brighten anyone's day... especially mine... and I am so greatful for every time I get to see it.<img
+            src="images/heart_2.png" id="smily_face"></p>
+        <p>Even though we haven't known each other for too long, it feels like we've already shared some incredible
+          moments and I'm excited to create many more memories with you in the future...<span><img src="images/bird_4.png" id="bird_3"></span></p>
+        <div class="border_bottom"></div>
+      </div>
+      <div class="page">
+        <div class="border_top"></div>
+
+        <h4><span><img id='sun' src="images/sun.png"></span>"We are speaking FACTS"<span> <img src="images/fake.png" id="facts"></span></h4>
+        
+          <div class="facts_border">
+
+            <img class="decoration" id = 'heart' src="images/heart_4.png">
+            <!-- <img class="decoration" id = 'phone' src="images/phone.png"> -->
+            <img class="decoration" id = 'msg' src="images/msg.png">
+            <img class="decoration" id = 'msg_heart' src="images/msg_heart.png">
+            <!-- <img class="decoration" id = 'msg_2' src="images/msg_2.png"> -->
+            <img class="decoration" id = 'leaf' src="images/leaf.png">
+
+
+            <!-- <img class ='decoration dust' id = 'dust' src="images/heart_dust.png"> -->
+
+            <div class="item par">
+              <div class="bullet"></div><div class="complimet">Your smile ... makes my day</div> 
+            </div>
+
+            <div class="item">
+              <div class="bullet"></div><div class="complimet">I fall in love with you all over again every time I hear your laugh</div> 
+            </div>
+            <div class="item par">
+              <div class="bullet"></div><div class="complimet">The way you hold your hair adds an extra touch of charm and beauty</div> 
+            </div>
+
+            <div class="item ">
+              <div class="bullet"></div><div class="complimet">You're not just cute; you're my adorable, sweet, and lovable girl</div> 
+            </div>
+
+            <div class="item par">
+              <div class="bullet"></div><div class="complimet">Even when you're upset, you're still the most beautiful person to me</div> 
+            </div>
+
+            <div class="item">
+              <div class="bullet"></div><div class="complimet">You set my world on fire, and I can't get enough of you</div> 
+            </div>
+
+
+          </div>
+
+
+        <div class="border_bottom"></div>
+      </div>
+      <div class="page">
+        <div class="border_top"></div>
+
+        <h4>A Month to Remember</h4>
+
+        <div class="border_bottom"></div>        
+      </div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+    </div>
+  </div>
+
+  <script>
+    var pages = document.getElementsByClassName('page');
+    for (var i = 0; i < pages.length; i++) {
+      var page = pages[i];
+      if (i % 2 === 0) {
+        page.style.zIndex = (pages.length - i);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var container1 = document.querySelector('.container1');
+      var pages = document.getElementsByClassName('page');
+
+      for (var i = 0; i < pages.length; i++) {
+        console.log(i)
+        //Or var page = pages[i];
+        pages[i].pageNum = i + 1;
+        pages[i].onclick = function () {
+          if (this.pageNum % 2 === 0) {
+            this.classList.remove('flipped');
+            this.previousElementSibling.classList.remove('flipped');
+          }
+          else {
+            this.classList.add('flipped');
+            this.nextElementSibling.classList.add('flipped');
+          }
+
+          if (pages[0].classList.contains('flipped')) {
+            container1.style.opacity = '0';
+          } else {
+
+            container1.style.opacity = '1';
+          }
+
+        }
+
+      }
+
+
+    })
+  </script>
+
+  <script src="canvas.js"></script>
+
+</body>
+
+</html>
