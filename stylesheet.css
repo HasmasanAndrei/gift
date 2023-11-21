@@ -56,6 +56,7 @@
     left: 0; /* Align the container to the left of the .page div */
     overflow: hidden; /* Hide any content that overflows the container */
     padding: 2.2vw;
+    display: block;
 
 }
 
@@ -154,13 +155,418 @@
     height: 2vw;
 }
 
+/* *********************************************
+*************** HAPPY BIRTHDAT WISH *********
+********************************************* */
+
+.page .facts_border video{
+    width: 14vw;
+}
+#playPauseBtn {
+    cursor: pointer;
+    padding: 0.5vw;
+    margin-top: 0.5vw;
+    display: block;
+    width: 10vw;
+}
+
+.page .facts_border .player{
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    /* margin-top: -1.5vw; */
+
+}
+
+.wish .facts_border{
+    /* border: 10px solid green; */
+    width: 100%;
+    height: calc(100% - 13vw);
+    position: absolute; 
+    top: 10vw; 
+    left: 0; 
+    overflow: hidden; 
+    padding: 1vw;
+    display: block;
+}
+
+/* *********************************************
+*************** HAPPY BIRTHDAT BUTTON & VIDEO *********
+********************************************* */
+
+#birthdayVideo{
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 0.15vw;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    border-bottom-left-radius: 0.3vw 4vw;
+    border-bottom-right-radius: 4vw 0.3vw;
+    border-top-left-radius: 0.3vw 4vw;
+    border-top-right-radius: 4vw 0.3vw;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: bold;
+}
+
+#playPauseBtn{
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 0.15vw;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Indie Flower', cursive !important;
+    font-size: 1.1vw;
+    /* line-height: 23px; */
+    outline: none;
+    /* padding: .75rem; */
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: bold;
+}
+
+#playPauseBtn:hover{
+    background-color: #ed4249;
+    color: white;
+    font-weight: bold;
+    /* transform: rotate(-2deg); */
+    transition: all 0ms ease-in-out;
+
+}
+
+
+/* ************************************
+****************** IMAGES ************
+************************************ */
+.left_title{
+    transform: rotate(-10deg);
+    height: 6vw;
+    top: 3.4vw;
+    left: 1.5vw;
+}
+
+.right_title{
+    transform: rotate(-4deg);
+    height: 6.2vw;
+    top: 2.4vw;
+    right: 0vw;
+
+}
+
+.wish .facts_border img{
+    position: absolute;
+    height: 7vw;
+}
+
+#img1{
+    transform: rotate(4deg);
+    left: 0.3vw;
+    top: 2vw;
+}
+
+#img2{
+    transform: rotate(-5deg);
+    right: 0.3vw;
+    top: 5vw
+}
+
+#img3{
+    transform: rotate(-5deg);
+    right: 0.3vw;
+    bottom: 4vw
+}
+
+#img4{
+    transform: rotate(-5deg);
+    left: 0.3vw;
+    bottom: 5vw
+}
+
+#img5{
+    transform: rotate(-5deg);
+    left: 5vw;
+    /* bottom: 5vw; */
+    height: 2.5vw;
+}
+
+#img6{
+    transform: rotate(5deg);
+    left: 1vw;
+    /* bottom: 5vw; */
+    height: 2.5vw;
+    top: 9vw;
+}
+#img7{
+    transform: rotate(-5deg);
+    left: 4vw;
+    /* bottom: 5vw; */
+    height: 2.5vw;
+    top: 15vw;
+}
+
+#img8{
+    transform: rotate(-5deg);
+    right: 4vw;
+    height: 2.5vw;
+    top: 0;
+}
+#img9{
+    transform: rotate(-5deg);
+    right: 3vw;
+    height: 2.5vw;
+    bottom: 1vw;
+}
+
+#img10{
+    transform: rotate(-5deg);
+    left: 6vw;
+    height: 2.5vw;
+    bottom: 1vw;
+}
+#img11{
+    transform: rotate(-5deg);
+    right: 2.5vw;
+    height: 2.5vw;
+    bottom: 15vw;
+}
 
 
 
 
 
+/* ************************************
+****************** A MONTH TO REMEMBER ************
+************************************ */
+
+.page .day{
+    /* border: 1px solid red; */
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+    /* text-decoration: underline; */
+
+}
+
+#introduction{
+    align-self: center;
+    /* background-color: #fff; */
+    /* background-image: none; */
+    /* background-position: 0 90%;
+    background-repeat: repeat no-repeat; */
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 0.15vw;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Indie Flower', cursive !important;
+    font-size: 1.1vw;
+    /* line-height: 23px; */
+    outline: none;
+    /* padding: .75rem; */
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    /* touch-action: manipulation; */
+    font-weight: bold;
+    padding: 1vw;
+}
+
+#introduction span{
+    color: #ed4249;
+}
+
+#ro{
+    height: 5.5vw;
+    opacity: 0.96;
+    top: 3.5vw;
+    left: 1.5vw;
+}
+
+#ph{
+    height: 5vw;
+    opacity: 0.96;
+    top: 3vw;
+    right: 1.2vw;
+    transform: rotate(-10deg);
+}
+
+/* ************************************ */
 
 
+
+/* ************************************
+****************** STORY ************
+************************************ */
+
+.page .event{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* border: 2px solid reds */
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+    column-gap: 0.7vw;
+    /* border: 2px solid red; */
+}
+
+.page .event .cartoon{
+    flex: 0 1 auto;
+    width: 50%;
+
+
+    
+
+}
+
+.page .event .cartoon img{
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    transform: rotate(3deg);
+   
+}
+
+
+.page .event .story{
+    flex: 1;
+    /* border: 5px solid green; */
+    padding: 0.4vw; /* Adjust as necessary */
+    background-color: #f0f0f0; /* Example background color, adjust as needed */
+    border: 1px solid #dcdcdc; /* Example border, adjust as needed */
+    font-size: 0.9vw;
+    font-weight: bold;
+    transform: rotate(-2deg);
+    line-height: 1.3vw;
+}
+
+
+.page .event_2{
+    text-align: center;
+    padding: 2vw;
+}
+
+.page .event_2 .cartoon_2 img{
+    /* border: 1px solid red; */
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.page .event_2 .story_2{
+    padding: 0.4vw; /* Adjust as necessary */
+    /* background-color: #f0f0f0; 
+    border: 1px solid #dcdcdc; */
+    font-size: 0.9vw;
+    font-weight: bold;
+    transform: rotate(-2deg);
+    line-height: 1.3vw;
+}
+
+#pumpkin{
+    position: absolute;
+    height: 8vw;
+    top: 18vw;
+    right: 0vw;
+    transform: rotate(9deg);
+}
+
+#ghost{
+    position: absolute;
+    height: 8vw;
+    top: 16vw;
+    left: 1vw;
+    transform: rotate(-7deg);
+}
+
+#bat{
+    position: absolute;
+    height: 5vw;
+    top: 26vw;
+    left: 1vw;
+    transform: rotate(-7deg);
+}
+
+#star{
+    position: absolute;
+    height: 3vw;
+    bottom: 3vw;
+    right: 3.5vw;
+    /* transform: rotate(-7deg); */
+    opacity: 0.8;
+}
+
+ 
+/* ******************  EVEN BETTER  ****************** */
+#subtitle_1{
+    /* border: 1px solid red; */
+    margin-top: 2vw;
+
+}
+
+.page .event_3{
+    margin: 1vw;
+    height: 24vw;
+    /* border: 5px solid red; */
+}
+
+.page .event_3 .cartoon_3 img{
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    height: 13vw;
+}
+
+#better_1{
+    top: 15vw;
+    left: 2vw;
+    transform: rotate(-2deg);
+}
+
+#better_2{
+    right: 1vw;
+    top: 18vw;
+    transform: rotate(3deg);
+}
+
+
+#better_3{
+    left: 2vw;
+    transform: rotate(3deg);
+    bottom: 3vw;
+    height: 12vw;
+}
 
 
 
@@ -194,6 +600,7 @@
     font-size: 3vw;
     font-family: 'Amatic SC', cursive !important;
     line-height: 3vw;
+
 }
 
 .book .container1 h5{
@@ -210,8 +617,9 @@ p {
     color: #000000;
     /* border: 1px solid red; */
     font-size: 1.1vw;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2vw;
+
 }
 
 .page h4 {
@@ -427,7 +835,7 @@ p {
     right: 0;
     background: rgba(0, 0, 0, 0);
     transition: background 0.7s;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .book .page:nth-child(odd) {
